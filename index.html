@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5" />
+    <title>Assignment 3</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .weather-container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+      }
+
+      .weather-container h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .weather-container h3 {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .weather-container p {
+        margin: 0;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Auto reload data</h2>
+    <div class="weather-container">
+      <h3>Water</h3>
+      <p>Ketinggian : {{.Status.Water}} Meter</p>
+      <p>Status : {{.StatusWater}}</p>
+    </div>
+    <div class="weather-container">
+      <h3>Wind</h3>
+      <p>Kecepatan : {{.Status.Wind}} m/s</p>
+      <p>Status : {{.StatusWind}}</p>
+    </div>
+  </body>
+</html>
